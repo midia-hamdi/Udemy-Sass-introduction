@@ -1,0 +1,14 @@
+{
+  "name": "udemy-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
