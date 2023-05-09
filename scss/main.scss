@@ -8,17 +8,42 @@ $font-sm: 20px;
 
 .nav{
     background-color: $color-primary;
+
+    ul li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: $font-sm;
+
+        &:hover{
+            color: $color-tertiary;
+        }
+    }
+}
+
+@mixin headingstyles ($FontSize){
+    font-size: $FontSize;
+    color: $color-secondary;
+    text-align: center;
+}
+
+@mixin transition($param...){
+    transition: $param;
 }
 
 .banner h1{
-    $color-secondary: green ! global;
-    font-size: $font-lg;
-    color: $color-secondary;
-    text-align: center;
+    @include headingstyles($font-lg)
 }
 
 .footer h3{
-    font-size: $font-md;
-    color: $color-secondary;
-    text-align: center;
+    @include headingstyles($font-md)
+    @include transition(color .5s, background-color 1s)
+
+    &:hover{
+        color: $color-tertiary;
+        background-color: $color-primary;
+    }
 }

@@ -1,12 +1,24 @@
 .nav {
   background-color: orange; }
+  .nav ul li {
+    list-style: none; }
+  .nav a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px; }
+    .nav a:hover {
+      color: royalblue; }
 
 .banner h1 {
   font-size: 40px;
-  color: green;
+  color: gray;
   text-align: center; }
 
 .footer h3 {
   font-size: 30px;
-  color: green;
-  text-align: center; }
+  color: gray;
+  text-align: center;
+  transition: color 0.5s, background-color 1s; }
+  .footer h3:hover {
+    color: royalblue;
+    background-color: orange; }
