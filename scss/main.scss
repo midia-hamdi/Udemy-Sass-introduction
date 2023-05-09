@@ -42,8 +42,8 @@ $font-sm: 20px;
 }
 
 .footer h3{
-    @include headingstyles($font-md)
-    @include transition(color .5s, background-color 1s)
+    @include headingstyles($font-md);
+    @include transition(color .5s, background-color 1s);
 
     &:hover{
         color: $color-tertiary;
