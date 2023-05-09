@@ -7,8 +7,7 @@ $font-md: 30px;
 $font-sm: 20px;
 
 .nav{
-    background-color: $color-primary;
-
+    background-color:lighten($color-primary, 20%);
     ul li{
         list-style: none;
     }
@@ -23,6 +22,10 @@ $font-sm: 20px;
         }
     }
 }
+
+// @function FontSize($Size) {
+//     @return $Size * 2;
+// }
 
 @mixin headingstyles ($FontSize){
     font-size: $FontSize;
@@ -47,3 +50,7 @@ $font-sm: 20px;
         background-color: $color-primary;
     }
 }
+
+// .banner p{
+//     font-size: FontSize($font-sm);
+// }
