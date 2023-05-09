@@ -22,3 +22,6 @@
   .footer h3:hover {
     color: royalblue;
     background-color: orange; }
+
+.banner p {
+  font-size: 40px; }

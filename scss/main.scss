@@ -23,9 +23,9 @@ $font-sm: 20px;
     }
 }
 
-// @function FontSize($Size) {
-//     @return $Size * 2;
-// }
+@function FontSize($Size) {
+    @return $Size * 2;
+}
 
 @mixin headingstyles ($FontSize){
     font-size: $FontSize;
@@ -51,6 +51,6 @@ $font-sm: 20px;
     }
 }
 
-// .banner p{
-//     font-size: FontSize($font-sm);
-// }
+.banner p{
+    font-size: FontSize($font-sm);
+}
